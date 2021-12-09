@@ -7,9 +7,10 @@
     <title>Aprilia's Portofolio</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js">
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="navbar-menu">
             <a href="#about" data-menuanchor="about">About</a>
             <a href="#experience">Experience</a>
@@ -18,8 +19,8 @@
             <a href="#skills">Skills</a>
         </div>
     </nav>
-    <div id="fullpage">
-        <!-- About Page -->
+    <!-- About Page -->
+    <section class="fullpage">
         <div class="about" id="about">
             <div class="container">
                 <div>
@@ -40,88 +41,140 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/choconutzy">
+                            <a href="https://github.com/choconutzy" target="_blank">
                                 <i class="fab fa-github icon"></i>
                             </a>
                         </li>
                     </ul>
-                </div>
-            
+                </div> 
             </div>
         </div>
-        <!-- Experience Page -->
+    </section>
+    <!-- Experience Page -->
+    <div class="fullpage">
         <div class="experience" id="experience" data-anchor="slide1">
-            <h2 class="txt-center">Experience</h2>
-            <div class="content">
-                <div class="container">
-                    <ul>
-                        <li>
-                            <h3>Visual Designer Intern at Aksel </h3>
-                            <p>October-December 2021</p>
-                            <p>Design Instagram Post, Banner, Poster</p>
-                        </li>
-                        <li>
-                            <h3>Graphic Designer Volunteer at Earth Hour Malang</h3>
-                            <p class="bold">January-December 2021</p>
-                            <p>Design Instagram Post, Twibbon, Pressconference Meeting Background</p>
-                        </li>
-                        <li>
-                            <h3>Editor at Ekspresi Magazine </h3>
-                            <p>Agustus 2017-December 2018</p>
-                            <p>Design Instagram Post, Twibbon, Pressconference Meeting Background</p>
-                        </li>
-                    </ul>
+            <div class="containers">
+                <h2 class="txt-center">Experience</h2>
+                <div class="content">
+                    <div class="container">
+                        <ul>
+                            <li>
+                                <h3>Visual Designer Intern at Aksel </h3>
+                                <p>October-December 2021</p>
+                                <p>Design Instagram Post, Banner, Poster</p>
+                            </li>
+                            <li>
+                                <h3>Graphic Designer Volunteer at Earth Hour Malang</h3>
+                                <p class="bold">January-December 2021</p>
+                                <p>Design Instagram Post, Twibbon, Pressconference Meeting Background</p>
+                            </li>
+                            <li>
+                                <h3>Editor at Ekspresi Magazine </h3>
+                                <p>Agustus 2017-December 2018</p>
+                                <p>Selected poetry, short story from participans, and check all articles before publications</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <img src="./src/2x/Experience@2x-8.png" alt="">
                 </div>
-                <img src="./src/2x/Experience@2x-8.png" alt="">
             </div>
-        </div>
-        <!-- Education Page -->
+        </div>    
+    </div>
+    <!-- Education Page -->
+    <div class="fullpage">
         <div class="education" id="education" data-anchor="slide1">
-            <h2 class="txt-center">Education</h2>
-            <div class="content-center">
-                <img src="" alt="">
-                <div class="container-center">
-                    <ul>
-                        <li>
-                            <h3>2021-2022</h3>
-                            <p><b>Kampus Merdeka</b> - Independent study</p>
-                            <p><b>Skilvul #Tech4Impact:</b> Digital Social Innovation and Coding Bootcamp</p>
-                        </li>
-                        <li>
-                            <h3>2019-2023</h3>
-                            <p><b>Undergraduate</b> - Marine Science</p>
-                            <p><b>Brawijaya University</b></p>
-                        </li>
-                        <li>
-                            <h3>2016-2019</h3>
-                            <p><b>Diploma</b> - Science Mayor</p>
-                            <p><b>SMA N 7 Purworejo</b></p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- Portofolio Page -->
-        <div class="portfolio" id="portfolio" data-anchor="slide1">
-            <h2 class="txt-center">Portfolio</h2>
-            <div class="content-center">
-                <div class="container-center">
-                    <div class="item">
-                        <h2>Tasty - Food Recipe Web</h2>
-                        <p>Group Project Front End Development - React JS</p>
-                        <a href="https://tasty-ecojnv4th-shopping-cart-tech-asign.vercel.app/" target="_blank">Visit Website</a>
-                    </div>
-                    <div class="item">
-                        <h2>menU - Food Tracker Web</h2>
-                        <p>Group Project Basic Web Development - HTML, CSS, Javascript</p>
-                        <a href="">Visit Website</a>
+            <div class="containers">
+                <h2 class="txt-center">Education</h2>
+                <div class="content-center">
+                    <img src="" alt="">
+                    <div class="container-center">
+                        <ul>
+                            <li>
+                                <h3>2021-2022</h3>
+                                <p><b>Kampus Merdeka</b> - Independent study</p>
+                                <p><b>Skilvul #Tech4Impact:</b> Digital Social Innovation and Coding Bootcamp</p>
+                            </li>
+                            <li>
+                                <h3>2019-2023</h3>
+                                <p><b>Undergraduate</b> - Marine Science</p>
+                                <p><b>Brawijaya University</b></p>
+                            </li>
+                            <li>
+                                <h3>2016-2019</h3>
+                                <p><b>Diploma</b> - Science Mayor</p>
+                                <p><b>SMA N 7 Purworejo</b></p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Skills Page -->
-        <div class="skills" id="skills" data-anchor="slide1">
         </div>
     </div>
+    <!-- Portofolio Page -->
+    <div class="fullpage">
+        <div class="portfolio" id="portfolio" data-anchor="slide2">
+            <div class="containers">
+                <h2 class="txt-center">Portfolio</h2>
+                <div class="content-center">
+                    <div class="container-center">
+                        <div class="item">
+                            <h2>Tasty - Food Recipe Web</h2>
+                            <p>Group Project Front End Development - React JS</p>
+                            <a href="https://tasty-ecojnv4th-shopping-cart-tech-asign.vercel.app/" target="_blank">Visit Website</a>
+                        </div>
+                        <div class="item">
+                            <h2>menU - Food Tracker Web</h2>
+                            <p>Group Project Basic Web Development - HTML, CSS, Javascript</p>
+                            <a href="https://menu-kelompok-3.netlify.app/" target="_blank">Visit Website</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Skills Page -->
+    <div class="fullpage">
+        <div class="skills" id="skills" data-anchor="slide3">
+            <div class="containers">
+                <h2 class="txt-center">Skills</h2>
+                <div class="content-center">
+                    <div class="container">
+                        <div data-tilt class="skill-container">
+                            <img src="https://cdn.freelogovectors.net/wp-content/uploads/2020/07/adobe-illustrator-logo.png">
+                            <h3>Adobe Illustrator</h3> 
+                        </div>
+                        <div class="skill-container">
+                            <img src="https://cdn.freelogovectors.net/wp-content/uploads/2021/09/adobe-photoshop-logo-freelogovectors.net_.png" alt="logo-photoshop">
+                            <h3>Adobe Photoshop </h3> 
+                        </div>
+                        <div class="skill-container">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-2752148-2284965.png">
+                            <h3>Javascript</h3> 
+                        </div>
+                        <div class="skill-container">
+                            <img src="http://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png">
+                            <h3>Python</h3>
+                        </div>
+                        <div class="skill-container">
+                            <img src="https://lh3.googleusercontent.com/proxy/ClBxVOGvyjKqn6of8tq4wCJUAyDnr36Fq2tNeiF3FuusKwzGUZUNAhNUCDOIKZ0DNRIZSYpk-daD33X3h2RLodFVxSPtGMRmhkQpkHASYRilorHFnghM1uM" alt="logo-figma">
+                            <h3>Figma</h3>
+                        </div>
+                        <div class="skill-container">
+                            <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="logo-reactjs">
+                            <h3>React JS</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./src/tiltjs/vanilla-tilt.min.js"></script>
+    <script>
+        	VanillaTilt.init(document.querySelectorAll(".skill-container"), {
+                max: 25,
+                speed: 400
+            });
+    </script>
 </body>
 </html>
