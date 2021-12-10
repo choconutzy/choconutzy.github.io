@@ -36,7 +36,6 @@ body{
 .navbar-menu{
     font-weight:5px;
     font-size:20px;
-
 }
 
 .navbar-menu a{
@@ -45,7 +44,16 @@ body{
     margin-left:2%;
     border-radius: 10px;
 }
-.navbar-menu a:hover{
+
+.navbar-menu a:hover, .navbar-menu a.active{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
+    background:rgba(255,255,255,0.07);
+  	-webkit-backdrop-filter: blur(5px);
+    border-left:0.01px solid rgba(255,255,255,0.2);
+    border-top: 0.01px solid rgba(255,255,255,0.2);
+}
+
+a .menu .active{
     /* color:rgba(199, 243, 255); */
     box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
     background:rgba(255,255,255,0.07);
@@ -82,11 +90,6 @@ body{
     padding:20px;
 }
 
-/* .sosmed{
-    display:flex;
-    justify-content:center;
-} */
-
 a{
     text-decoration:none;
 }
@@ -105,7 +108,6 @@ a{
 
 .experience .container{
     width:50%;
-    /* border:white solid 0.1px; */
     padding:1% 3%;
     margin-left:2%;
     border-radius: 20px;
